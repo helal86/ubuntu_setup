@@ -43,7 +43,7 @@ COMMENT
 sudo apt-get install -y moka-icon-theme numix-gtk-theme numix-icon-theme-circle 
 
 #Install standard packages
-sudo apt-get install -y android-tools-adb android-tools-fastboot build-essential filezilla filezilla-common g++ htop git git-core git-man gparted gvncviewer java-common postgresql-client postgresql-client-common python2.7-dev rdesktop screen unity-tweak-tool unzip unrar vlc whois wine winetricks openssh-server openjdk-8-jdk p7zip remmina testdisk virtualbox python-pip sublime-text-installer exfat-utils variety gimp 
+sudo apt-get install -y android-tools-adb android-tools-fastboot build-essential filezilla filezilla-common g++ htop git git-core git-man gparted gvncviewer java-common postgresql-client postgresql-client-common python2.7-dev rdesktop screen unity-tweak-tool unzip unrar vlc whois wine winetricks openssh-server openjdk-8-jdk p7zip remmina testdisk virtualbox python-pip sublime-text-installer exfat-utils variety gimp vagrant 
 
 #Installing Google Chrome
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
