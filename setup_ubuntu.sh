@@ -19,7 +19,7 @@ sudo apt-get update
 sudo apt-get install -y moka-icon-theme numix-gtk-theme numix-icon-theme-circle 
 
 #Install standard packages
-sudo apt-get install -y android-tools-adb android-tools-fastboot build-essential filezilla filezilla-common g++ htop git git-core git-man gparted gvncviewer java-common postgresql-client postgresql-client-common python2.7-dev rdesktop screen unity-tweak-tool unzip unrar vlc whois wine winetricks openssh-server openjdk-8-jdk p7zip remmina testdisk virtualbox python-pip sublime-text-installer exfat-utils variety gimp vagrant azure-cli shutter 
+sudo apt-get install -y android-tools-adb android-tools-fastboot build-essential filezilla filezilla-common g++ htop git git-core git-man gparted gvncviewer java-common postgresql-client postgresql-client-common python2.7-dev rdesktop screen unity-tweak-tool unzip unrar vlc whois openssh-server openjdk-8-jdk p7zip remmina testdisk virtualbox python-pip sublime-text-installer exfat-utils variety gimp vagrant azure-cli shutter 
 
 #Installing Google Chrome
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
@@ -50,7 +50,7 @@ sudo pip install --no-input awscli
 #Install Microsoft Teams
 cd ~/Downloads
 wget https://github.com/ivelkov/teams-for-linux/releases/download/v0.0.4/teams-for-linux_0.0.4_amd64.deb
-sudo dpkg -i teams-for-linux_0.0.4_amd64.deb
+sudo dpkg -i -y teams-for-linux_0.0.4_amd64.deb
 
 sudo apt-get -f install
 sudo apt-get -y upgrade
