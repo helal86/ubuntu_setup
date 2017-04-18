@@ -47,6 +47,11 @@ sudo apt-get install -y apt-transport-https
 #Install AWS CLI
 sudo pip install --no-input awscli
 
+#Install Microsoft Teams
+cd ~/Downloads
+wget https://github.com/ivelkov/teams-for-linux/releases/download/v0.0.4/teams-for-linux_0.0.4_amd64.deb
+sudo dpkg -i teams-for-linux_0.0.4_amd64.deb
+
 sudo apt-get -f install
 sudo apt-get -y upgrade
 
