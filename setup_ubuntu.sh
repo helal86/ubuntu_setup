@@ -46,8 +46,13 @@ echo "deb [arch=amd64] https://packages.microsoft.com/repos/azure-cli/ wheezy ma
      sudo tee /etc/apt/sources.list.d/azure-cli.list
 sudo apt-key adv --keyserver packages.microsoft.com --recv-keys 417A0893
 
+#Brave Browser
+curl https://s3-us-west-2.amazonaws.com/brave-apt/keys.asc | sudo apt-key add -
+echo "deb [arch=amd64] https://s3-us-west-2.amazonaws.com/brave-apt `lsb_release -sc` main" | sudo tee -a /etc/apt/sources.list.d/brave-`lsb_release -sc`.list
+
 sudo apt-get update
 sudo apt-get install -y google-chrome-stable
+sudo apt-get install -y brave
 sudo apt-get install -y google-talkplugin
 sudo apt-get install -y dropbox
 
@@ -69,6 +74,23 @@ cd ~/Downloads
 wget https://releases.hashicorp.com/terraform/0.9.11/terraform_0.9.11_linux_amd64.zip
 unzip terraform_0.9.11_linux_amd64.zip
 sudo mv terraform /usr/bin/
+
+#Install Franz - desktop messaging 
+cd ~/Downloads
+sudo mkdir -p /opt/franz
+wget -qO- https://github.com/meetfranz/franz-app/releases/download/4.0.4/Franz-linux-x64-4.0.4.tgz | sudo tar xvz -C /opt/franz/
+sudo wget "https://cdn-images-1.medium.com/max/360/1*v86tTomtFZIdqzMNpvwIZw.png" -O /opt/franz/franz-icon.png
+# configure app for desktop use
+sudo bash -c "cat <<EOF > /usr/share/applications/franz.desktop                                                                 
+[Desktop Entry]
+Name=Franz
+Comment=
+Exec=/opt/franz/Franz
+Icon=/opt/franz/franz-icon.png
+Terminal=false
+Type=Application
+Categories=Messaging,Internet
+EOF"
 
 
 sudo apt-get -f install
