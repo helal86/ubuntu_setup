@@ -38,8 +38,7 @@ wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-ke
 sudo sh -c 'echo "deb http://dl.google.com/linux/talkplugin/deb/ stable main" >> /etc/apt/sources.list.d/google-talkplugin.list'
 
 #Dropbox
-sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 5044912E
-sudo sh -c 'echo "deb http://linux.dropbox.com/ubuntu/ $(lsb_release -cs) main" >> /etc/apt/sources.list.d/dropbox.list'
+cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
 
 #Azure CLI
 echo "deb [arch=amd64] https://packages.microsoft.com/repos/azure-cli/ wheezy main" | \
@@ -54,7 +53,6 @@ sudo apt-get update
 sudo apt-get install -y google-chrome-stable
 sudo apt-get install -y brave
 sudo apt-get install -y google-talkplugin
-sudo apt-get install -y dropbox
 
 #Install AWS CLI
 sudo pip install --no-input awscli
@@ -96,7 +94,9 @@ EOF"
 sudo apt-get -f install
 sudo apt-get -y upgrade
 
-echo starting tweaks
+echo "starting tweaks"
+
+~/.dropbox-dist/dropboxd
 
 #disable guest login
 echo allow-guest=false | sudo tee -a /usr/share/lightdm/lightdm.conf.d/50-ubuntu.conf
