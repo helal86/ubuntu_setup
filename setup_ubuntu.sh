@@ -27,7 +27,7 @@ sudo apt-get update
 sudo apt-get install -y moka-icon-theme numix-gtk-theme numix-icon-theme-circle 
 
 #Install standard packages
-sudo apt-get install -y software-properties-common apt-transport-https curl ca-certificates android-tools-adb android-tools-fastboot docker-ce build-essential filezilla filezilla-common g++ htop git git-core git-man gparted gvncviewer java-common postgresql-client postgresql-client-common python2.7-dev rdesktop screen unity-tweak-tool unzip unrar vlc whois openssh-server openjdk-8-jdk p7zip remmina testdisk virtualbox python-pip sublime-text-installer exfat-utils ansible variety gimp vagrant azure-cli shutter 
+sudo apt-get install -y software-properties-common apt-transport-https curl ca-certificates android-tools-adb android-tools-fastboot docker-ce build-essential filezilla filezilla-common g++ htop git git-core git-man gparted gvncviewer java-common postgresql-client postgresql-client-common python2.7-dev rdesktop screen unity-tweak-tool unzip unrar vlc whois openssh-server openjdk-8-jdk p7zip remmina testdisk virtualbox python-pip sublime-text-installer exfat-utils ansible variety gimp vagrant shutter traceroute network-manager-openvpn network-manager-openvpn-gnome
 
 #Installing Google Chrome
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
@@ -58,6 +58,18 @@ sudo pip install --no-input awscli
 cd ~/Downloads
 wget https://github.com/ivelkov/teams-for-linux/releases/download/v0.0.4/teams-for-linux_0.0.4_amd64.deb
 sudo dpkg -i -y teams-for-linux_0.0.4_amd64.deb
+
+#Install Stacer
+cd ~/Downloads
+wget https://github.com/oguzhaninan/Stacer/releases/download/v1.0.8/stacer_1.0.8_amd64.deb
+sudo dpkg -i -y stacer_1.0.8_amd64.deb
+
+#Install Terraform
+cd ~/Downloads
+wget https://releases.hashicorp.com/terraform/0.9.11/terraform_0.9.11_linux_amd64.zip
+unzip terraform_0.9.11_linux_amd64.zip
+sudo mv terraform /usr/bin/
+
 
 sudo apt-get -f install
 sudo apt-get -y upgrade
