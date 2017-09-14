@@ -60,12 +60,12 @@ sudo pip install --no-input awscli
 #Install Microsoft Teams
 cd ~/Downloads
 wget https://github.com/ivelkov/teams-for-linux/releases/download/v0.0.4/teams-for-linux_0.0.4_amd64.deb
-sudo dpkg -i -y teams-for-linux_0.0.4_amd64.deb
+sudo dpkg -i teams-for-linux_0.0.4_amd64.deb
 
 #Install Stacer
 cd ~/Downloads
 wget https://github.com/oguzhaninan/Stacer/releases/download/v1.0.8/stacer_1.0.8_amd64.deb
-sudo dpkg -i -y stacer_1.0.8_amd64.deb
+sudo dpkg -i stacer_1.0.8_amd64.deb
 
 #Install Terraform
 cd ~/Downloads
