@@ -8,13 +8,15 @@ echo $username
 
 #add repositories 
 sudo add-apt-repository -y ppa:moka/stable
-sudo add-apt-repository -y ppa:webupd8team/sublime-text-3
 sudo add-apt-repository -y ppa:numix/ppa
 sudo add-apt-repository -y ppa:tualatrix/ppa
 sudo add-apt-repository -y ppa:nvbn-rm/ppa
 sudo add-apt-repository -y ppa:shutter/ppa
 sudo apt-add-repository -y ppa:ansible/ansible
 sudo add-apt-repository -y ppa:peterlevi/ppa
+
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
 
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository \
@@ -27,7 +29,7 @@ sudo apt-get update
 sudo apt-get install -y moka-icon-theme numix-gtk-theme numix-icon-theme-circle 
 
 #Install standard packages
-sudo apt-get install -y software-properties-common apt-transport-https curl ca-certificates android-tools-adb android-tools-fastboot docker-ce build-essential filezilla filezilla-common g++ htop git git-core git-man gparted gvncviewer java-common postgresql-client postgresql-client-common python2.7-dev rdesktop screen unity-tweak-tool unzip unrar vlc whois openssh-server openjdk-8-jdk p7zip remmina testdisk virtualbox python-pip sublime-text-installer exfat-utils ansible variety gimp vagrant shutter traceroute network-manager-openvpn network-manager-openvpn-gnome
+sudo apt-get install -y software-properties-common apt-transport-https curl ca-certificates android-tools-adb android-tools-fastboot docker-ce build-essential filezilla filezilla-common g++ htop git git-core git-man gparted gvncviewer java-common postgresql-client postgresql-client-common python2.7-dev rdesktop screen unity-tweak-tool unzip unrar vlc whois openssh-server openjdk-8-jdk p7zip remmina testdisk virtualbox python-pip sublime-text exfat-utils ansible variety gimp vagrant shutter traceroute network-manager-openvpn network-manager-openvpn-gnome
 
 #Installing Google Chrome
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
