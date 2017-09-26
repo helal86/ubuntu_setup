@@ -9,8 +9,8 @@ SKVPN
 .aws
 .azure
 Chrome Users
-Sublime Text - Material Theme, plugins 
-BashIT - +theme
+Sublime Text - Material Theme, plugins - https://packagecontrol.io/packages/Material%20Theme
+BashIT - +powerline theme - https://github.com/Bash-it/bash-it
 
 
 
