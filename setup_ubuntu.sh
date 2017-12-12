@@ -30,7 +30,7 @@ sudo apt-get update
 sudo apt-get install -y moka-icon-theme numix-gtk-theme numix-icon-theme-circle 
 
 #Install standard packages
-sudo apt-get install -y software-properties-common apt-transport-https curl ca-certificates android-tools-adb android-tools-fastboot docker-ce build-essential filezilla filezilla-common g++ htop git git-core git-man gparted gvncviewer java-common postgresql-client postgresql-client-common python2.7-dev rdesktop screen unity-tweak-tool unzip unrar vlc whois openssh-server openjdk-8-jdk p7zip remmina testdisk virtualbox python-pip sublime-text exfat-utils ansible variety gimp vagrant shutter traceroute network-manager-openvpn network-manager-openvpn-gnome green-recorder
+sudo apt-get install -y software-properties-common apt-transport-https curl ca-certificates android-tools-adb android-tools-fastboot docker-ce build-essential filezilla filezilla-common g++ htop git git-core git-man gparted gvncviewer java-common postgresql-client postgresql-client-common python2.7-dev rdesktop screen unity-tweak-tool unzip unrar vlc whois openssh-server openjdk-8-jdk p7zip remmina testdisk virtualbox python-pip sublime-text exfat-utils ansible variety gimp vagrant shutter traceroute network-manager-openvpn network-manager-openvpn-gnome green-recorder apt-transport-https azure-cli
 
 #Installing Google Chrome
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
@@ -46,7 +46,7 @@ cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
 #Azure CLI
 echo "deb [arch=amd64] https://packages.microsoft.com/repos/azure-cli/ wheezy main" | \
      sudo tee /etc/apt/sources.list.d/azure-cli.list
-sudo apt-key adv --keyserver packages.microsoft.com --recv-keys 417A0893
+sudo apt-key adv --keyserver packages.microsoft.com --recv-keys 52E16F86FEE04B979B07E28DB02C46DF417A0893
 
 #Brave Browser
 curl https://s3-us-west-2.amazonaws.com/brave-apt/keys.asc | sudo apt-key add -
