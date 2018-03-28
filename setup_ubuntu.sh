@@ -30,7 +30,7 @@ sudo apt-get update
 sudo apt-get install -y moka-icon-theme numix-gtk-theme numix-icon-theme-circle 
 
 #Install standard packages
-sudo apt-get install -y software-properties-common apt-transport-https curl ca-certificates android-tools-adb android-tools-fastboot docker-ce build-essential filezilla filezilla-common g++ htop git git-core git-man gparted gvncviewer java-common postgresql-client postgresql-client-common python2.7-dev rdesktop screen unity-tweak-tool unzip unrar vlc whois openssh-server openjdk-8-jdk p7zip remmina testdisk virtualbox python-pip sublime-text exfat-utils ansible variety gimp vagrant shutter traceroute network-manager-openvpn network-manager-openvpn-gnome green-recorder apt-transport-https azure-cli
+sudo apt-get install -y software-properties-common apt-transport-https curl ca-certificates android-tools-adb android-tools-fastboot docker-ce build-essential filezilla filezilla-common g++ htop git git-core git-man gparted gvncviewer java-common postgresql-client postgresql-client-common python2.7-dev rdesktop screen unity-tweak-tool unzip unrar vlc whois openssh-server openjdk-8-jdk p7zip remmina testdisk virtualbox python-pip sublime-text exfat-utils ansible variety gimp vagrant shutter traceroute network-manager-openvpn network-manager-openvpn-gnome green-recorder apt-transport-https azure-cli sshuttle
 
 #Installing Google Chrome
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
@@ -56,9 +56,6 @@ sudo apt-get update
 sudo apt-get install -y google-chrome-stable
 sudo apt-get install -y brave
 sudo apt-get install -y google-talkplugin
-
-#Install sshuttle
-pip install sshuttle
 
 #Install AWS CLI
 sudo pip install --no-input awscli
