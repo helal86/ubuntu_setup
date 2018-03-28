@@ -57,6 +57,9 @@ sudo apt-get install -y google-chrome-stable
 sudo apt-get install -y brave
 sudo apt-get install -y google-talkplugin
 
+#Install sshuttle
+pip install sshuttle
+
 #Install AWS CLI
 sudo pip install --no-input awscli
 
