@@ -96,7 +96,7 @@ sudo apt-get -y upgrade
 
 echo "starting tweaks"
 
-~/.dropbox-dist/dropboxd
+~/.dropbox-dist/dropboxd &
 
 sudo usermod -aG docker $username
 
