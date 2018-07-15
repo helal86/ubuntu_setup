@@ -49,7 +49,7 @@ sudo apt-get install -y software-properties-common apt-transport-https curl ca-c
 
 #snap install 
 sudo snap install skype --classic
-sudo snap install sublime-text --channel 
+sudo snap install sublime-text --classic
 
 #Installing Google Chrome
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
@@ -103,12 +103,13 @@ sudo usermod -aG docker $username
 #Install bashit
 git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
 ~/.bash_it/install.sh --silent
+sed -i 's/bobby/powerline/g' ~/.bashrc
 
 #disable guest login
 echo allow-guest=false | sudo tee -a /usr/share/lightdm/lightdm.conf.d/50-ubuntu.conf
 
 #disable online search via gnome tweak
-gnome-tweak-tool
+gnome-tweaks
 
 
 
