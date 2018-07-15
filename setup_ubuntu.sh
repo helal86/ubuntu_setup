@@ -98,6 +98,12 @@ echo "starting tweaks"
 
 ~/.dropbox-dist/dropboxd
 
+sudo usermod -aG docker $username
+
+#Install bashit
+git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
+~/.bash_it/install.sh --silent
+
 #disable guest login
 echo allow-guest=false | sudo tee -a /usr/share/lightdm/lightdm.conf.d/50-ubuntu.conf
 
