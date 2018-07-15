@@ -105,8 +105,9 @@ git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
 ~/.bash_it/install.sh --silent
 sed -i 's/bobby/powerline/g' ~/.bashrc
 
-#disable guest login
-echo allow-guest=false | sudo tee -a /usr/share/lightdm/lightdm.conf.d/50-ubuntu.conf
+#enable lowercase bash
+if [ ! -a ~/.inputrc ]; then echo '$include /etc/inputrc' > ~/.inputrc; fi
+echo 'set completion-ignore-case On' >> ~/.inputrc
 
 #disable online search via gnome tweak
 gnome-tweaks
