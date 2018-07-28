@@ -22,3 +22,8 @@ echo 'set completion-ignore-case On' >> ~/.inputrc
 
 make sublime default - https://askubuntu.com/questions/396938/how-do-i-make-sublime-text-3-the-default-text-editor
 
+AlternateTab  by fmuellner ONOFF
+Substitute Alt-Tab with a window based switcher that does not group by application.
+
+system-monitor  by Cerin
+
