@@ -109,6 +109,34 @@ sed -i 's/bobby/powerline/g' ~/.bashrc
 if [ ! -a ~/.inputrc ]; then echo '$include /etc/inputrc' > ~/.inputrc; fi
 echo 'set completion-ignore-case On' >> ~/.inputrc
 
+#set sublime as default text editor
+echo "[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Sublime Text
+GenericName=Text Editor
+Comment=Sophisticated text editor for code, markup and prose
+Exec=/opt/sublime_text/sublime_text %F
+Terminal=false
+MimeType=text/plain;
+Icon=sublime-text
+Categories=TextEditor;Development;
+StartupNotify=true
+Actions=Window;Document;
+
+[Desktop Action Window]
+Name=New Window
+Exec=/opt/sublime_text/sublime_text -n
+OnlyShowIn=Unity;
+
+[Desktop Action Document]
+Name=New File
+Exec=/opt/sublime_text/sublime_text --command new_file
+OnlyShowIn=Unity;" > ~/sublime_text.desktop
+
+sudo mv ~/sublime_text.desktop /usr/share/applications/sublime_text.desktop
+sudo sed -i 's/gedit/sublime_text/g' /usr/share/applications/defaults.list
+
 #disable online search via gnome tweak
 gnome-tweaks
 
