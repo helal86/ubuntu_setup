@@ -45,11 +45,15 @@ sudo apt-get update
 sudo apt-get install -y numix-gtk-theme numix-icon-theme-circle 
 
 #Install standard packages
-sudo apt-get install -y software-properties-common apt-transport-https curl ca-certificates android-tools-adb android-tools-fastboot docker-ce build-essential filezilla filezilla-common g++ htop git git-core git-man gparted gvncviewer java-common postgresql-client postgresql-client-common python2.7-dev rdesktop screen gnome-tweak-tool gnome-tweaks unzip unrar vlc whois openssh-server openjdk-8-jdk p7zip testdisk virtualbox python-pip  exfat-utils ansible variety gimp shutter traceroute network-manager-openvpn network-manager-openvpn-gnome green-recorder azure-cli sshuttle jq code wine-stable winetricks chrome-gnome-shell
+sudo apt-get install -y software-properties-common apt-transport-https curl ca-certificates android-tools-adb android-tools-fastboot docker-ce build-essential filezilla filezilla-common g++ htop git git-core git-man gparted gvncviewer java-common postgresql-client postgresql-client-common python2.7-dev rdesktop screen gnome-tweak-tool gnome-tweaks unzip unrar vlc whois openssh-server openjdk-8-jdk p7zip testdisk virtualbox python-
+exfat-utils ansible variety gimp shutter traceroute network-manager-openvpn network-manager-openvpn-gnome green-recorder azure-cli sshuttle jq code wine-stable winetricks chrome-gnome-shell
 
 #snap install 
 sudo snap install skype --classic
 sudo snap install sublime-text --classic
+
+# pip install 
+pip install virtualenv
 
 #Installing Google Chrome
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
@@ -136,6 +140,8 @@ OnlyShowIn=Unity;" > ~/sublime_text.desktop
 
 sudo mv ~/sublime_text.desktop /usr/share/applications/sublime_text.desktop
 sudo sed -i 's/gedit/sublime_text/g' /usr/share/applications/defaults.list
+
+sudo sed -i "s/Icon=code/Icon=vscode/g" /usr/share/applications/code.desktop
 
 #disable online search via gnome tweak
 gnome-tweaks
