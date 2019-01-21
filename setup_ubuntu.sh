@@ -46,7 +46,7 @@ sudo apt-get install -y numix-gtk-theme numix-icon-theme-circle
 
 #Install standard packages
 sudo apt-get install -y software-properties-common apt-transport-https curl ca-certificates android-tools-adb android-tools-fastboot docker-ce build-essential filezilla filezilla-common g++ htop git git-core git-man gparted gvncviewer java-common postgresql-client postgresql-client-common python2.7-dev rdesktop screen gnome-tweak-tool gnome-tweaks unzip unrar vlc whois openssh-server openjdk-8-jdk p7zip testdisk virtualbox python-
-exfat-utils ansible variety gimp shutter traceroute network-manager-openvpn network-manager-openvpn-gnome green-recorder azure-cli sshuttle jq code wine-stable winetricks chrome-gnome-shell xournal
+exfat-utils ansible variety gimp shutter traceroute network-manager-openvpn network-manager-openvpn-gnome green-recorder azure-cli sshuttle jq code wine-stable winetricks chrome-gnome-shell xournal clipit
 
 #snap install 
 sudo snap install skype --classic
@@ -65,6 +65,10 @@ sudo sh -c 'echo "deb http://dl.google.com/linux/talkplugin/deb/ stable main" >>
 
 #Dropbox
 cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
+
+# Docker compose 
+sudo curl -L "https://github.com/docker/compose/releases/download/1.23.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
 
 #Brave Browser
 curl https://s3-us-west-2.amazonaws.com/brave-apt/keys.asc | sudo apt-key add -
