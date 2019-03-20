@@ -12,7 +12,7 @@ sudo apt install -y curl wget lsb-release dirmngr snapd apt-transport-https lsb-
 
 #add repositories 
 sudo add-apt-repository -y ppa:numix/ppa
-sudo add-apt-repository -y ppa:shutter/ppa
+sudo add-apt-repository -y ppa:ubuntuhandbook1/shutter
 sudo apt-add-repository -y ppa:ansible/ansible
 sudo add-apt-repository -y ppa:peterlevi/ppa
 sudo add-apt-repository -y ppa:fossproject/ppa
@@ -50,7 +50,7 @@ sudo apt-get update
 sudo apt-get install -y numix-gtk-theme numix-icon-theme-circle 
 
 #Install standard packages
-sudo apt-get install -y ca-certificates android-tools-adb android-tools-fastboot docker-ce build-essential python-pip filezilla filezilla-common g++ htop git git-core git-man gparted gvncviewer java-common postgresql-client postgresql-client-common python2.7-dev rdesktop screen gnome-tweak-tool gnome-tweaks unzip unrar vlc whois openssh-server openjdk-8-jdk p7zip testdisk virtualbox exfat-utils ansible variety gimp shutter traceroute network-manager-openvpn network-manager-openvpn-gnome green-recorder azure-cli sshuttle jq code wine-stable winetricks chrome-gnome-shell xournal clipit python3 chromium-browser net-tools 
+sudo apt-get install -y --install-recommends ca-certificates android-tools-adb android-tools-fastboot docker-ce build-essential python-pip filezilla filezilla-common g++ htop git git-core git-man gparted gvncviewer java-common postgresql-client postgresql-client-common python2.7-dev rdesktop screen gnome-tweak-tool gnome-tweaks unzip unrar vlc whois openssh-server openjdk-8-jdk p7zip testdisk virtualbox exfat-utils ansible variety gimp shutter traceroute network-manager-openvpn network-manager-openvpn-gnome green-recorder azure-cli sshuttle jq code wine-stable winetricks chrome-gnome-shell xournal clipit python3 chromium-browser net-tools 
 
 #snap install 
 sudo snap install skype --classic
