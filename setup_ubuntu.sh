@@ -50,7 +50,7 @@ sudo apt-get update
 sudo apt-get install -y numix-gtk-theme numix-icon-theme-circle 
 
 #Install standard packages
-sudo apt-get install -y ca-certificates android-tools-adb android-tools-fastboot docker-ce build-essential filezilla filezilla-common g++ htop git git-core git-man gparted gvncviewer java-common postgresql-client postgresql-client-common python2.7-dev rdesktop screen gnome-tweak-tool gnome-tweaks unzip unrar vlc whois openssh-server openjdk-8-jdk p7zip testdisk virtualbox exfat-utils ansible variety gimp shutter traceroute network-manager-openvpn network-manager-openvpn-gnome green-recorder azure-cli sshuttle jq code wine-stable winetricks chrome-gnome-shell xournal clipit python3 chromium-browser net-tools 
+sudo apt-get install -y ca-certificates android-tools-adb android-tools-fastboot docker-ce build-essential python-pip filezilla filezilla-common g++ htop git git-core git-man gparted gvncviewer java-common postgresql-client postgresql-client-common python2.7-dev rdesktop screen gnome-tweak-tool gnome-tweaks unzip unrar vlc whois openssh-server openjdk-8-jdk p7zip testdisk virtualbox exfat-utils ansible variety gimp shutter traceroute network-manager-openvpn network-manager-openvpn-gnome green-recorder azure-cli sshuttle jq code wine-stable winetricks chrome-gnome-shell xournal clipit python3 chromium-browser net-tools 
 
 #snap install 
 sudo snap install skype --classic
